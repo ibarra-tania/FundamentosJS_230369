@@ -14,7 +14,7 @@ el objetivo de confirmar los conocimientos básicos de lógica de programación.
  |No. |Descripción|Estatus|
  |--|--|--|
  |1.|Metodología de Evaluación|✅Finalizada|
- |2.| Inicialización del Proyecto de Fundamentos de JS|Revisada|
+ |2.| Inicialización del Proyecto de Fundamentos de JS|Activa|
 
 
 ### Autor
