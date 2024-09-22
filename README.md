@@ -11,10 +11,12 @@ el objetivo de confirmar los conocimientos básicos de lógica de programación.
 
 ## Historial de Prácticas
 
- |No. |Descripción|Estatus|
- |--|--|--|
- |1.|Metodología de Evaluación|✅Finalizada|
- |2.| Inicialización del Proyecto de Fundamentos de JS|Activa|
+ |No. |Descripción|Potenciador|Estatus|
+ |--|--|--|--|
+ |1.|Metodología de Evaluación|1|✅Finalizada|
+ |2.| Inicialización del Proyecto de Fundamentos de JS|8|✅Finalizada|
+ |3.| Ejercicio 01: Declaración de Variables en JS|--|✅Finalizada|
+ |4.| Ejercicio 02: Declaración de Variables (Undefined/Boolean/Number/String/BigInt/Symbol/Null/Function)|16|Activa|
 
 
 ### Autor
