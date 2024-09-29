@@ -146,3 +146,37 @@ Producto2.Disponibilidad="Sí";
 let nuevoTipoDisponibilidad = typeof(Producto2.Disponibilidad)
 console.log(Producto2);
 console.log(`El nuevo tipo de dato de la disponibilidad es: ${nuevoTipoDisponibilidad}`)
+
+// Agregar nuevas propiedad al objeto
+
+console.log("%c5.- Agregar nuevas propiedades al Objeto", style_console);
+// Prara agregar una nueva propiedad utilizaremos el nombre del objeto los corchetes [] y el nuevo de la propiedad con su valor por defecto.
+console.log("Los datos actuales del Comprador son: ")
+console.table(Comprador)
+Comprador['Direccion'] = "Av. Benito Juárez No. 1525, Interior 4D, Xicotepec de Juárez, Puebla, México"
+Comprador['Tipo']= "Nuevo Cliente"
+Comprador['ActividadReciente']= true
+Comprador['TotalCompras']=3516.25
+console.log("Después de haber agregado las propiedades Dirección, Tipo,  ActividadReciente y TotalCompras.... ")
+console.table(Comprador)
+
+//Eliminar propiedades existentes de un Objeto
+console.log("%c6.- Eliminar propiedades existentes de un Objeto", style_console);
+console.log("La estuctura y valores del objeto PEDIDO son previos a la modificación:")
+console.table(Pedido)
+delete Pedido.TipoPago
+console.log("Después de la modificación...")
+console.table(Pedido)
+
+//
+console.log("%c7.- Métodos para contronlar la mutabilidad de los Objetos, Congelación (FREEZE)", style_console);
+//Si deseamos no permitir que los objetos sean modificados ni en estructura, ni en valor, utilizaremos el método FREEZE (congelar)
+console.log('La estructura actual del Objeto COMPRADOR es: ')
+console.table(Comprador)
+Object.freeze(Comprador)
+//Intenetamos agregar , eliminar o modificar los valores de sus propiedades
+Comprador.FechaUltimaCompra = "05/09/2024 10:15:25"
+delete Comprador.Tipo;
+Comprador.Direccion= "Calle 16 de Septiembre #102, Col. Manantiales,Huauchinango, Puebla, México";
+console.log('Verificamos si se realizaron los cambios en el Objeto COMPRADOR:')
+console.table(Comprador)
