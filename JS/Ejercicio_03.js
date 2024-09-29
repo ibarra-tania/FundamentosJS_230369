@@ -95,10 +95,10 @@ let Producto2 =
 let Comprador =
 {
     ID: 3216,
-    Nombre: "Marco",
-    Apellidos: "Ramírez Hernández",
+    Nombre: "Tania",
+    Apellidos: "Ibarra Salgado",
     Tipo: "Frecuente",
-    Correo: "mar.ram@gmail.com",
+    Correo: "tass14x03@gmail.com",
     PaisOrigen: "México",
     SaldoActual: 14000.00
 }
