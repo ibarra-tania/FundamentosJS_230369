@@ -19,6 +19,7 @@ el objetivo de confirmar los conocimientos básicos de lógica de programación.
  |4.| Ejercicio 02: Declaración de Variables (Undefined/Boolean/Number/String/BigInt/Symbol/Null/Function)|10|✅Finalizada|
  |5.|Ejercicio 03: Repaso de Objetos|19|✅Finalizada|
  |6.|Ejercicio 04: Repaso de Arreglos|18|✅Finalizada|
+ |7.|Ejercicio 05: |--|Activo|
 
 
 ### Autor
