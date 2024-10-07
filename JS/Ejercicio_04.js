@@ -196,7 +196,7 @@ console.log("Resultando en:")
 console.table(estudiantes)
 
 
-//También splice sirve para reemplazar elemtos por otros, en este caso remplazaremos a "Tania Ibarra" por "Brandon Leon"
+//También splice sirve para reemplazar elementos por otros, en este caso remplazaremos a "Tania Ibarra" por "Brandon Leon"
 
 console.log("Ahora vamos a remplazar a \"Tania Ibarra\" en los elementos de la posición por \"Brandon Leon\"")
 estudiantes.splice(0,1, "Brandon Leon")
@@ -221,3 +221,78 @@ Object.freeze(signosZodiacales);
 
 
 
+console.log("%c11.- Filtrado de Elemento dentro de un arreglo utilizando el método FILTER", style_console);
+
+console.table(estudiantes);
+//antes de filtrqar datos llenemos el arreglo con 10 elementos
+estudiantes.push("Tania Ibarra");
+estudiantes.push("Esther Gonzalez")
+estudiantes.push("Lorena C. Galindo")
+estudiantes.push("Zyanya Zacatenco")
+estudiantes.push("Jonathan Ramirez")
+estudiantes.push("Ana Daniela")
+console.table(estudiantes)
+
+Object.freeze(estudiantes)
+
+//Filter es un método que recorre los elementos de un arreglo haciendo alguna tarea en específico, lo que tenemos que considerar es que este nuevo arreglo resultante es un objeto nuevo que pueda ser mutable.
+
+console.log("Filtrando los primeros 5 elementos")
+let nuevoEstudiantes = estudiantes.filter((estudiante, index) => index<5);
+console.table(nuevoEstudiantes);
+
+console.table(filtraPrimeros5(estudiantes));
+
+
+
+//filtrar a los estudiantes que su nombre tenga más de 15 carácteres
+let nuevoEstudiantesNombre = estudiantes.filter((estudiante) => estudiante.length>15);
+console.table(nuevoEstudiantesNombre);
+
+
+
+//Intentamos modificar el arreglo inmutable
+/*estudiantes.pop()
+console.table(estudiantes)*/
+
+
+//Intentamos modificar el nuevo arreglo que no ha sido congelado
+
+nuevoEstudiantes.unshift("Diego Tecorralco")
+console.table(nuevoEstudiantes);
+
+function filtraPrimeros5 (arregloEstudiantes){
+
+    let listaFiltrada=[]
+    for(let i=0; i<5; i++){
+        listaFiltrada.push(arregloEstudiantes[i]);
+ 
+    }
+    return listaFiltrada;
+    
+}
+
+
+
+
+//filtrado de datos   -   Transformando los datos.
+console.log("%c12.- Filtrado de Elemento dentro de un arreglo utilizando el método MAP, en el que necesitamos transformarlos", style_console);
+
+console.log("Imprimimos los elementos actuales de signosZodiacales:")
+console.log(signosZodiacales);
+
+
+//que podemos hacer si necesitamos el mismo arreglo pero ahora con todos sus elementos con letras MAYUSCULAS
+
+console.table(signosZodiacales.map(signoZodiacal => signoZodiacal.toUpperCase()))
+
+
+//Reducción de elementos de un arreglo, se usa cuando debemos hacer operaciones matemáticos o cuantitativas a un arreglo, como obtener totales, la idea es reducir la lista a un valor más simplificado.
+
+const costosListaCompras= [15, 52.50,16.90,32.50,28,105,45.2,94.10]
+
+//como podemos calcular el total de una lista de costos de un carrito de compras
+
+console.log("Los precios son: ")
+console.table(costosListaCompras)
+console.log(`El total de la compra es: ${costosListaCompras.reduce((total, precio)=> total+precio, 0).toFixed(2)}`)
