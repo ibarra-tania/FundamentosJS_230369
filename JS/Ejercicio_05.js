@@ -102,6 +102,8 @@ evaluarMayoriaEdad=(edad, pais)=>
 console.log("Evaluando la mayoría de edad de una persona en Estados Unidos")
 console.log(evaluarMayoriaEdad(edadPersona, "USA"))
 
+console.log("Evaluando la mayoría de edad de una persona en Estados Unidos")
+console.log(evaluarMayoriaEdad(edadPersona, "MX"))
 
 
 
